@@ -1,0 +1,28 @@
+[debug] [2022-09-22T15:00:40.567Z] ----------------------------------------------------------------------
+[debug] [2022-09-22T15:00:40.569Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2022-09-22T15:00:40.569Z] CLI Version:   11.9.0
+[debug] [2022-09-22T15:00:40.569Z] Platform:      win32
+[debug] [2022-09-22T15:00:40.569Z] Node Version:  v16.17.0
+[debug] [2022-09-22T15:00:40.570Z] Time:          Thu Sep 22 2022 20:30:40 GMT+0530 (India Standard Time)
+[debug] [2022-09-22T15:00:40.570Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-22T15:00:40.635Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-22T15:00:40.635Z] > authorizing via signed-in user (vedthp06@gmail.com)
+[debug] [2022-09-22T15:00:40.635Z] [iam] checking project friendlychat-5d0d5 for permissions ["firebase.projects.get"]
+[debug] [2022-09-22T15:00:40.637Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-5d0d5:testIamPermissions [none]
+[debug] [2022-09-22T15:00:40.637Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-5d0d5:testIamPermissions x-goog-quota-user=projects/friendlychat-5d0d5
+[debug] [2022-09-22T15:00:40.637Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-5d0d5:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-09-22T15:00:42.247Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-5d0d5:testIamPermissions 200
+[debug] [2022-09-22T15:00:42.247Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-5d0d5:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-09-22T15:00:42.248Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-5d0d5 [none]
+[debug] [2022-09-22T15:00:42.985Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-5d0d5 200
+[debug] [2022-09-22T15:00:42.986Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-5d0d5 {"projectId":"friendlychat-5d0d5","projectNumber":"878223679838","displayName":"FriendlyChat","name":"projects/friendlychat-5d0d5","resources":{"hostingSite":"friendlychat-5d0d5","storageBucket":"friendlychat-5d0d5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_0a7dd9cc-a365-4518-ab07-0710c800d73c"}
+[debug] [2022-09-22T15:00:42.988Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlychat-5d0d5/sites 
+[debug] [2022-09-22T15:00:44.204Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlychat-5d0d5/sites 200
+[debug] [2022-09-22T15:00:44.204Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlychat-5d0d5/sites {"sites":[{"name":"projects/friendlychat-5d0d5/sites/friendly-chat-1010","defaultUrl":"https://friendly-chat-1010.web.app","appId":"1:878223679838:web:ecf455941128d7e01e6fcf","type":"USER_SITE"},{"name":"projects/friendlychat-5d0d5/sites/friendlychat-5d0d5","defaultUrl":"https://friendlychat-5d0d5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-09-22T15:00:44.205Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-5d0d5/webApps/-/config [none]
+[debug] [2022-09-22T15:00:45.626Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-5d0d5/webApps/-/config 200
+[debug] [2022-09-22T15:00:45.626Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-5d0d5/webApps/-/config {"projectId":"friendlychat-5d0d5","appId":"1:878223679838:web:ecf455941128d7e01e6fcf","storageBucket":"friendlychat-5d0d5.appspot.com","locationId":"us-central","apiKey":"AIzaSyCPw2ZhHKuSqazYCqmAdFxcLqI4Lgdsglg","authDomain":"friendlychat-5d0d5.firebaseapp.com","messagingSenderId":"878223679838"}
+[info] i  hosting: Serving hosting files from: ./public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m./public\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [22/Sep/2022:15:00:52 +0000] "GET /scripts/main.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.42" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Sep/2022:15:00:52 +0000] \"GET /scripts/main.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.42\""}}
